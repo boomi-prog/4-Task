@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Elite E-Learning Platform</h1>
+    </header>
+
+    <main>
+      <section class="courses">
+        <h2>Available Courses</h2>
+        <div class="course-list">
+          <div class="course-card">
+            <h3>Web Development</h3>
+            <p>Learn HTML,CSS,JavaScript and more!</p>
+            <button onclick="showCourse()">View Course</button>
+          </div>
+          <div class="course-card">
+            <h3>Data Science</h3>
+            <p>Master data analysis,visualization and machine learning!</p>
+            <button onclick="showDataScienceCourse()">View Course</button>
+          </div>
+          <div class="course-card">
+            <h3>Artificial Intelligence</h3>
+            <p>Understand AI concepts,neural networks,deep learning.</p>
+            <button onclick="showAICourse()">View Course</button>
+          </div>
+          <div class="course-card">
+            <h3>Cyber Security</h3>
+            <p>Learn how to protect systems,networks, and data from attacks.</p>
+            <button onclick="showCyberCourse()">View Course</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="course-detail" class="hidden">
+        <h2>Course: Web Development</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/dD2EISBDjWM"
+          title="YouTube video player"
+          allowfullscreen
+        ></iframe>
+        <div class="progress-container">
+          <label>Progress:</label>
+          <progress value="30" max="100"></progress> 30%
+        </div>
+      </section>
+      <section id="datascience-course-detail" class="hidden">
+        <h2>Course: Data Science</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ua-CiDNNj30"
+          title="YouTube video player"
+          allowfullscreen
+        ></iframe>
+        <div class="progress-container">
+          <label>Progress:</label>
+          <progress value="50" max="100"></progress> 50%
+        </div>
+      </section>
+      <section id="ai-course-detail" class="hidden">
+        <h2>Course: Artificial Intelligence</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/2ePf9rue1Ao"
+          title="YouTube video player"
+          allowfullscreen
+        >
+        </iframe>
+        <div class="progress-container">
+          <label>Progress:</label>
+          <progress value="40" max="100"></progress> 40%
+        </div>
+      </section>
+      <section id="cyber-course-detail" class="hidden">
+        <h2>Course: Cyber Security</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/inWWhr5tnEA"
+          title="YouTube video player"
+          allowfullscreen
+        ></iframe>
+        <div class="progress-container">
+          <label>Progress:</label>
+          <progress value="20" max="100"></progress> 40%
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
