@@ -1,102 +1,735 @@
-<!DOCTYPE html>
+<!-- https://themewagon.github.io/docgenAI// -->
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Learning Platform</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <h1>Elite E-Learning Platform</h1>
-    </header>
-
-    <main>
-      <section class="courses">
-        <h2>Available Courses</h2>
-        <div class="course-list">
-          <div class="course-card">
-            <h3>Web Development</h3>
-            <p>Learn HTML,CSS,JavaScript and more!</p>
-            <button onclick="showCourse()">View Course</button>
-          </div>
-          <div class="course-card">
-            <h3>Data Science</h3>
-            <p>Master data analysis,visualization and machine learning!</p>
-            <button onclick="showDataScienceCourse()">View Course</button>
-          </div>
-          <div class="course-card">
-            <h3>Artificial Intelligence</h3>
-            <p>Understand AI concepts,neural networks,deep learning.</p>
-            <button onclick="showAICourse()">View Course</button>
-          </div>
-          <div class="course-card">
-            <h3>Cyber Security</h3>
-            <p>Learn how to protect systems,networks, and data from attacks.</p>
-            <button onclick="showCyberCourse()">View Course</button>
-          </div>
-        </div>
-      </section>
-
-      <section id="course-detail" class="hidden">
-        <h2>Course: Web Development</h2>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/dD2EISBDjWM"
-          title="YouTube video player"
-          allowfullscreen
-        ></iframe>
-        <div class="progress-container">
-          <label>Progress:</label>
-          <progress value="30" max="100"></progress> 30%
-        </div>
-      </section>
-      <section id="datascience-course-detail" class="hidden">
-        <h2>Course: Data Science</h2>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/ua-CiDNNj30"
-          title="YouTube video player"
-          allowfullscreen
-        ></iframe>
-        <div class="progress-container">
-          <label>Progress:</label>
-          <progress value="50" max="100"></progress> 50%
-        </div>
-      </section>
-      <section id="ai-course-detail" class="hidden">
-        <h2>Course: Artificial Intelligence</h2>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/2ePf9rue1Ao"
-          title="YouTube video player"
-          allowfullscreen
+    <nav class="navbar navbar-expand-lg background border border-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#"
+          ><i class="bi bi-file-earmark-text-fill text-danger"></i>DocGenAI</a
         >
-        </iframe>
-        <div class="progress-container">
-          <label>Progress:</label>
-          <progress value="40" max="100"></progress> 40%
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon nav-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav flex-container">
+            <li class="nav-item">
+              <a class="nav-link hover-color"  aria-current="page" href="#"
+                >How It Works</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover-color"  href="#" >Documents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover-color" href="#">Pricing</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li><a href="#" class="nav-link sign-in">Sign In</a></li>
+            <li><a href="#" class="text-white btn btn-danger">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="first-container">
+        <div class="container">
+          <div class="row first-row">
+            <div class="col-12 col-md-4 text-white mt-5 main-container">
+              <ul class="list">
+                <li>Trusted by 10,000+ Companies</li>
+              </ul>
+              <h1 class="title">
+                Legal Docs <span class="text-danger">in Minutes</span>
+              </h1>
+              <p>
+                Generate compliant NDAs, contracts, and policies with AI. Fast,
+                affordable, and simple—no lawyer required.
+              </p>
+              <div class="btn-container">
+                <button class="btn btn-danger">Start Free</button>
+                <button class="btn btn-outline-danger">View samples</button>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mt-5 ms-5 img-container">
+              <img src="./images/robot_PNG6.png" alt="" width="80%" />
+            </div>
+          </div>
         </div>
       </section>
-      <section id="cyber-course-detail" class="hidden">
-        <h2>Course: Cyber Security</h2>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/inWWhr5tnEA"
-          title="YouTube video player"
-          allowfullscreen
-        ></iframe>
-        <div class="progress-container">
-          <label>Progress:</label>
-          <progress value="20" max="100"></progress> 40%
+      <section class="text-white second-container">
+        <div class="container">
+          <div class="row second-row">
+            <div class="col-12 col-md-6 my-5 problem-container">
+              <h1 class="mb-5" style="font-size: 50px; font-weight: bold">
+                The Problem
+              </h1>
+              <h5 class="">💰 Hiring lawyers is expensive</h5>
+              <p style="color: gray" ;>
+                Legal services can cost thousands for simple documents
+              </p>
+              <h5>⏱️ Legal documents take time</h5>
+              <p style="color: gray" ;>
+                Traditional drafting takes weeks or months
+              </p>
+              <h5>📖 Confusing legal language</h5>
+              <p style="color: gray" ;>
+                Complex jargon makes documents hard to understand
+              </p>
+            </div>
+            <div class="col-12 col-md-6 mt-5 border-solution text-white mb-3">
+              <h1 style="font-size: 50px; font-weight: bold" ;>Our Solution</h1>
+              <p style="color: gray">
+                Our AI creates clear, ready-to-use legal documents tailored to
+                your business in minutes. No legal jargon. No confusion. Just
+                documents you can understand and use immediately.
+              </p>
+              <p>
+                <i class="bi bi-check-circle-fill text-danger"></i> Save
+                thousands on legal fees
+              </p>
+              <p>
+                <i class="bi bi-check-circle-fill text-danger"></i> Get
+                documents in minutes, not months
+              </p>
+              <p>
+                <i class="bi bi-check-circle-fill text-danger"></i> Clear, plain
+                English language
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="third-container">
+        <h1 class="title text-center text-white">How It Works</h1>
+        <p style="color: gray" class="text-center mb-5">
+          Simple, intuitive, and fast. Three steps to your legal documents.
+        </p>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 mt-3">
+              <div class="card text-white p-4 card-container">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h1 class="text-danger opacity-25" style="font-size: 70px">
+                      01
+                    </h1>
+                  </div>
+                  <div class="card-text">
+                    <h5>Choose a Document Type</h5>
+                    <p style="color: gray">
+                      Select from NDA, Contract, Privacy Policy, and more
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mt-3">
+              <div class="card text-white p-4 card-container">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h1 class="text-danger opacity-25" style="font-size: 70px">
+                      02
+                    </h1>
+                  </div>
+                  <div class="card-text">
+                    <h5>Answer Simple Questions</h5>
+                    <p style="color: gray">
+                      Our AI asks just what it needs to know about your business
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mt-3">
+              <div class="card text-white p-4 card-container">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h1 class="text-danger opacity-25" style="font-size: 70px">
+                      01
+                    </h1>
+                  </div>
+                  <div class="card-text">
+                    <h5>Download or Edit Instantly</h5>
+                    <p style="color: gray">
+                      Get your document ready to use or customize further
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fourth-container">
+        <h1 class="title text-center text-white" ;>Document Templates</h1>
+        <p style="color: gray" class="text-center mb-5" ;>
+          Professional, attorney-reviewed templates for every business need
+        </p>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-3 mt-2">
+              <div
+                class="card templates-card text-white p-4 d-flex justify-content-center align-items-center"
+              >
+                <h1>🤝</h1>
+                <p>NDA (Mutual)</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 mt-2">
+              <div
+                class="card templates-card text-white p-4 d-flex justify-content-center align-items-center"
+              >
+                <h1>🔐</h1>
+                <p>NDA (Non-Mutual)</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 mt-2">
+              <div
+                class="card templates-card text-white p-4 d-flex justify-content-center align-items-center"
+              >
+                <h1>📋</h1>
+                <p>Privacy Policy</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 mt-2">
+              <div
+                class="card templates-card text-white p-4 d-flex justify-content-center align-items-center"
+              >
+                <h1>⚖️</h1>
+                <p>Terms of Service</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-3 mt-2">
+              <div
+                class="card templates-card text-white p-4 d-flex justify-content-center align-items-center"
+              >
+                <h1>💼</h1>
+                <p>Freelance Contract</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 mt-2">
+              <div
+                class="card templates-card text-white p-4 d-flex justify-content-center align-items-center"
+              >
+                <h1>👥</h1>
+                <p>Employment Agreement</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 mt-2">
+              <div
+                class="card templates-card text-white p-4 d-flex justify-content-center align-items-center"
+              >
+                <h1>📞</h1>
+                <p>Consulting Agreement</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 mt-2">
+              <div
+                class="card templates-card text-white p-4 d-flex justify-content-center align-items-center"
+              >
+                <h1>📄</h1>
+                <p>Service Agreement</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fifth-container bg-dark">
+        <h1 class="title text-center text-white p-3 mb-5">Key Features</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 mt-2">
+              <div class="card card-1  text-white">
+                <div class="card-body">
+                  <h1>⚡</h1>
+                  <h5>Attorney-reviewed templates</h5>
+                  <p style="color: gray">
+                    Created by legal experts for accuracy and compliance
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mt-2">
+              <div class="card card-1  text-white">
+                <div class="card-body">
+                  <h1>🇺🇸</h1>
+                  <h5>US-business friendly</h5>
+                  <p style="color: gray">
+                    Compliant with US laws and regulations and understand
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mt-2">
+              <div class="card card-1  text-white">
+                <div class="card-body">
+                  <h1>📖</h1>
+                  <h5>No legal jargon</h5>
+                  <p style="color: gray">
+                    Clear, plain English everyone can understand
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-4 mt-2">
+              <div class="card card-1  text-white">
+                <div class="card-body">
+                  <h1>✏️</h1>
+                  <h5>Edit & export anytime</h5>
+                  <p style="color: gray">
+                    Customize documents to your specific needs
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mt-2">
+              <div class="card card-1  text-white">
+                <div class="card-body">
+                  <h1>🔒</h1>
+                  <h5>Secure & private</h5>
+                  <p style="color: gray">
+                    Your documents are never shared or stored and accuracy
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mt-2">
+              <div class="card card-1 text-white">
+                <div class="card-body">
+                  <h1>⚡</h1>
+                  <h5>Instant generation</h5>
+                  <p style="color: gray">
+                    Get professional documents in under 5 minutes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sixth-container">
+        <div class="container">
+          <div class="row sixth-row">
+            <div class="col-12 col-md-4 mt-5">
+              <div class="card card-2 text-white p-3">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h1>🔒</h1>
+                  </div>
+                  <div class="card-text">
+                    <h5>Security</h5>
+                    <p style="color: gray">
+                      Enterprise-grade encryption protects your data
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mt-5">
+              <div class="card card-2 text-white p-3">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h1>🛡️</h1>
+                  </div>
+                  <div class="card-text">
+                    <h5>Privacy</h5>
+                    <p style="color: gray">
+                      Your documents are never shared or retained
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mt-5">
+              <div class="card card-2 text-white p-3">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h1>🇺🇸</h1>
+                  </div>
+                  <div class="card-text">
+                    <h5>US-Focused</h5>
+                    <p style="color: gray">
+                      Compliant with all US business regulations
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-5">
+              <div class="card card-2 text-white">
+                <div class="card-body">
+                  <h5>Important Disclaimer</h5>
+                  <p style="color: gray">
+                    This tool does not replace a licensed attorney. Documents
+                    generated are for informational purposes. For complex legal
+                    matters or specific legal advice, please consult with a
+                    qualified attorney.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="seventh-container">
+        <h1 class="text-white text-center">Simple, Transparent Pricing</h1>
+        <p class="text-center" style="color: gray">
+          Choose the plan that fits your needs
+        </p>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 mt-5">
+              <div class="card bg-dark text-white mt-4 start-container">
+                <div class="card-body p-5">
+                  <h3>Starter</h3>
+                  <p>Perfect for getting started</p>
+                  <h1 class="fw-bold" style="font-size: 50px">$0</h1>
+                  <button class="btn btn-outline-light mt-4 mb-5 w-100 hover">
+                    Get Started
+                  </button>
+                  <p>
+                    <i class="bi bi-check-lg fs-5 text-danger"></i> 1 document
+                    per month
+                  </p>
+                  <p>
+                    <i class="bi bi-check-lg fs-5 text-danger"></i> Watermarked
+                    documents
+                  </p>
+                  <p>
+                    <i class="bi bi-check-lg fs-5 text-danger"></i> Basic
+                    templates
+                  </p>
+                  <p>
+                    <i class="bi bi-check-lg fs-5 text-danger"></i> Email
+                    support
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mt-5">
+              <div class="card bg-dark text-white pro-container">
+                <div class="card-body border p-5 border-danger rounded-4">
+                  <p class="btn btn-outline-danger rounded-pill">Recommended</p>
+                  <h3>Pro</h3>
+                  <p>For most small businesses</p>
+                  <span class="fw-bold" style="font-size: 50px">$29</span
+                  ><span>/month</span><br />
+                  <button class="btn btn-danger mt-4 mb-5 w-100">
+                    Start Free Trial
+                  </button>
+                  <p>
+                    <i class="bi bi-check-lg fs-5 text-danger"></i>No watermark
+                  </p>
+                  <p>
+                    <i class="bi bi-check-lg fs-5 text-danger"></i>Editable
+                    formats
+                  </p>
+                  <p>
+                    <i class="bi bi-check-lg fs-5 text-danger"></i>Priority
+                    support
+                  </p>
+                  <p>
+                    <i class="bi bi-check-lg fs-5 text-danger"></i>Advanced
+                    templates
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-4 mt-5">
+              <div class="card bg-dark text-white mt-4 start-container">
+                <div class="card-body p-5">
+                  <h3>Business</h3>
+                  <p>For growing teams</p>
+                  <span class="fw-bold" style="font-size: 50px">$79</span
+                  ><span>/month</span><br />
+                  <button class="btn btn-outline-light mt-4 mb-5 w-100 hover">
+                    Contact Sales
+                  </button>
+                  <p>
+                    <i class="bi bi-check-lg fs-5 text-danger"></i>Everything in
+                    Pro
+                  </p>
+                  <p>
+                    <i class="bi bi-check-lg fs-5 text-danger"></i>Team access
+                  </p>
+                  <p>
+                    <i class="bi bi-check-lg fs-5 text-danger"></i>Client
+                    documents
+                  </p>
+                  <p>
+                    <i class="bi bi-check-lg fs-5 text-danger"></i>Priority
+                    support
+                  </p>
+                  <p>
+                    <i class="bi bi-check-lg fs-5 text-danger"></i>Custom
+                    Templates
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="eight-container">
+        <h1 class="text-center text-white">Frequently Asked Questions</h1>
+        <p class="text-center text-white">Everything you need to know</p>
+        <div class="container">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button text-white"
+                  style="background-color: black"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Is this legally binding?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body" style="background-color: black">
+                  <p style="color: gray">
+                    All documents are fully editable. You can customize them to
+                    match your specific business needs before download.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-white"
+                  style="background-color: black"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                >
+                  Can I Customize documents?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body" style="background-color: black">
+                  <p style="color: gray">
+                    Yes, all our templates are created to comply with US federal
+                    and state laws. International support is coming soon.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-white"
+                  style="background-color: black"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Is this US-specific
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse text-white"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body" style="background-color: black">
+                  <p style="color: gray">
+                    Yes, you can cancel your subscription at any time with no
+                    penalties or hidden fees. Your documents remain accessible
+                    forever.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-white"
+                  style="background-color: black"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Can I Cancel anytime?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse bg-dark text-white"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body" style="background-color: black">
+                  <p style="color: gray">
+                    Most documents are generated in under 5 minutes. Once
+                    generated, you can download or edit immediately.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-white"
+                  style="background-color: black"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  How Long does generation take?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse text-white"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body" style="background-color: black">
+                  <p style="color: gray">
+                    Complete privacy is guaranteed. We never store your
+                    documents after generation, and they're not shared with
+                    anyone.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-white"
+                  style="background-color: black"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Are my documents Private?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse text-white"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body" style="background-color: black">
+                  <p style="color: gray">
+                    Complete privacy is guaranteed. We never store your
+                    documents after generation, and they're not shared with
+                    anyone.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="nineth-container">
+        <p class="font-style fw-bold">Stop Paying for</p>
+        <p class="text-danger font-style fw-bold">Basic Lawyers.</p>
+        <p>
+          Generate professional,compliant legal documents today.No credit card
+          required.
+        </p>
+        <button class="btn btn-danger generate-btn">
+          Generate your First Document
+        </button>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row p-5 border-row">
+            <div class="col-12 col-md-3">
+              <h3>
+                <i class="bi bi-file-earmark-text-fill text-danger"></i>DocGenAI
+              </h3>
+              <p style="color: gray">
+                AI Legal Document Generator for US businesses
+              </p>
+            </div>
+            <div class="col-12 col-md-3">
+              <h5>Product</h5>
+              <p style="color: gray">How It Works</p>
+              <p style="color: gray">Pricing</p>
+              <p style="color: gray">FAQ</p>
+            </div>
+            <div class="col-12 col-md-3">
+              <h5>Company</h5>
+              <p style="color: gray">Blog</p>
+              <p style="color: gray">Contact</p>
+              <p style="color: gray">Careers</p>
+            </div>
+            <div class="col-12 col-md-3">
+              <h5>Legal</h5>
+              <p style="color: gray">Privacy Policy</p>
+              <p style="color: gray">Terms of Service</p>
+              <p style="color: gray">Disclaimer</p>
+              <p style="color: gray">Contact Us</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-
-    <script src="script.js"></script>
+    <footer>
+      <p class="text-center mt-5" style="color: gray;">
+        © 2025 DocGenAI. All rights reserved. This tool does not replace a
+        licensed attorney.
+        <p class="text-center" style="color: gray;">Developed by Codescandy • Distributed by ThemeWagon</p> 
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
